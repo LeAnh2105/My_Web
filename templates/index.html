@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chuyển ảnh thành Grayscale</title>
+    <style>
+        /* Chỉnh giao diện chung */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Hiệu ứng cho tiêu đề */
+h1 {
+    font-size: 40px;
+    animation: changeColor 1s infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #B799FF;
+    }
+
+    50% {
+        color: #AEE2FF;
+    }
+
+    100% {
+        color: #0075FF;
+    }
+}
+
+/* Phần chọn tệp (file input) */
+.file-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/*Chọn tệp */
+.choose-file {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền */
+}
+
+/* Hiệu ứng khi di chuột hover hoặc focus */
+.file-wrapper:hover .choose-file,
+.file-wrapper:focus .choose-file {
+    background-color: #0c9a53; /* Màu khi hover hoặc focus */
+}
+
+/* Input tệp ảnh ẩn */
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+/* Nhãn kết quả */
+#resultLabel {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Khung chọn tệp */
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phần hiển thị hình ảnh trước khi chuyển đổi */
+#imagePreviewContainer, #originalImageContainer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+#imagePreview, #originalImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Phần biểu mẫu tải lên */
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#uploadContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Phần chọn tệp */
+#fileInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+#fileInputLabel {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Chuyển ảnh thành Grayscale</h1>
+
+    <!-- Phần chọn tệp (file input) -->
+    <div class="file-wrapper">
+        <form action="/process_image" method="post" enctype="multipart/form-data">
+            <label for="fileInput" class="choose-file">Choose File</label>
+            <input type="file" name="file" accept="image/*" id="fileInput" class="file-input">
+        </form>
+    </div>
+
+    <!-- Hiển thị hình ảnh gốc và trước khi chuyển đổi -->
+    <div id="imageContainer">
+        <div id="originalImageContainer">
+            <img id="originalImage" src="" style="display: none;">
+        </div>
+
+        <div id="imagePreviewContainer">
+            <img id="imagePreview" src="" style="display: none;">
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
