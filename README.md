@@ -8,6 +8,5 @@
 [GitHub Repository](https://github.com/LeAnh2105/My_Web.git)
 
 ## Data
-** Danh sách các hình ảnh chó và mèo để hổ trợ cho việc thử nghiệm web**
+**Danh sách các hình ảnh chó và mèo để hổ trợ cho việc thử nghiệm web**
 
-## Hướng dẫn sử dụng 
