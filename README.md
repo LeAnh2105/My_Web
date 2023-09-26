@@ -5,9 +5,9 @@
 - **Mã số sinh viên**: 20120427
 
 ## Link github
-[GitHub Repository](https://github.com/LeAnh2105/Web_GRAYSCALE)
+[GitHub Repository](https://github.com/LeAnh2105/My_Web.git)
 
 ## Link Data
-[Data Repository](https://github.com/LeAnh2105/Web_GRAYSCALE/Data)
+[Data Repository](https://github.com/LeAnh2105/My_Web.git/Data)
 
 ## Hướng dẫn sử dụng 
