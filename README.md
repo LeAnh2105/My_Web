@@ -8,6 +8,6 @@
 [GitHub Repository](https://github.com/LeAnh2105/My_Web.git)
 
 ## Link Data
-[Data Repository](https://github.com/LeAnh2105/My_Web.git/Data)
+[Data Repository](https://github.com/LeAnh2105/My_Web/Data)
 
 ## Hướng dẫn sử dụng 
