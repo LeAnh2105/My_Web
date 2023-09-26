@@ -1,10 +1,13 @@
-# Web Chuyển Ảnh RGB Sang GrayScale  
-## 1. Thông tin cá nhân  
-### Tên: Lê Nhựt Anh
-### Mã số sinh viên: 20120427
-## 2. Link github
+# Web Chuyển Ảnh RGB Sang GrayScale
 
-## 3. Link Data
+## Thông tin cá nhân
+- **Tên**: Lê Nhựt Anh
+- **Mã số sinh viên**: 20120427
 
-## 4. Hướng dẫn sử dụng 
+## Link github
+[GitHub Repository](https://github.com/LeAnh2105/Web_GRAYSCALE)
 
+## Link Data
+[Data Repository](https://github.com/LeAnh2105/Web_GRAYSCALE/Data)
+
+## Hướng dẫn sử dụng 
