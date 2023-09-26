@@ -7,7 +7,7 @@
 ## Link github
 [GitHub Repository](https://github.com/LeAnh2105/My_Web.git)
 
-## Link Data
-[Data Repository](https://github.com/LeAnh2105/My_Web/Data)
+## Data
+** Danh sách các hình ảnh chó và mèo để hổ trợ cho việc thử nghiệm web**
 
 ## Hướng dẫn sử dụng 
